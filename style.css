@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-700: #D8D8D8;
+    --blue-100: #E5EAF1;
+    --blue-50: #F6FAFF;
+    --gradient: linear-gradient(180deg, var(--black) 0%, var(--black) 60%);
+
+    --space-0: 0;
+    --space-100: calc(8 / 16 * 1rem);
+    --space-200: calc(16 / 16 * 1rem);
+    --space-300: calc(24 / 16 * 1rem);
+    --space-400: calc(32 / 16 * 1rem);
+    --space-500: calc(40 / 16 * 1rem);
+    --space-600: calc(48 / 16 * 1rem);
+    --space-700: calc(56 / 16 * 1rem);
+    --space-800: calc(64 / 16 * 1rem);
+    --space-900: calc(72 / 16 * 1rem);
+    --space-1000: calc(80 / 16 * 1rem);
+
+    --font: 'Josefin Sans', sans-serif;
+
+    --font-xxs: calc(14 / 16 * 1rem);
+    --font-xs: calc(15 / 16 * 1rem);
+    --font-sm: calc(16 / 16 * 1rem);
+    --font-md: calc(24 / 16 * 1rem);
+    --font-lg: calc(32 / 16 * 1rem);
+    --font-xl: calc(40 / 16 * 1rem);
+    --font-xxl: calc(48 / 16 * 1rem);
+    --font-xxxl: calc(72 / 16 * 1rem);
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+
+    --letter-spacing-narrow: calc(0.5 / 16 * 1rem);
+    --line-height-tall: 1.65;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--white);
+}
+
+.text-1 {
+    font-family: var(--font);
+    font-size: var(--font-xxxl);
+    font-weight: var(--font-light);
+}
+
+.text-2 {
+    font-family: var(--font);
+    font-size: var(--font-xxs);
+    font-weight: var(--font-light);
+}
+
+.text-3 {
+    font-family: var(--font);
+    font-size: var(--font-xl);
+    font-weight: var(--font-light);
+}
+
+.text-4 {
+    font-family: var(--font);
+    font-size: var(--font-lg);
+    font-weight: var(--font-light);
+}
+
+.text-5 {
+    font-family: var(--font);
+    font-size: var(--font-sm);
+    font-weight: var(--font-light);
+}
+
+.text-6 {
+    font-family: var(--font);
+    font-size: var(--font-xs);
+    font-weight: var(--font-light);
+    line-height: var(--line-height-tall);
+}
+
+.text-7 {
+    font-family: var(--font);
+    font-size: var(--font-xxs);
+    font-weight: var(--font-light);
+    letter-spacing: var(--letter-spacing-narrow);
+}
