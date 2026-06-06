@@ -203,7 +203,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    padding: var(--space-400) var(--space-300);
+    padding: var(--space-500) var(--space-300);
 }
 
 .site-header__nav[data-menuopen="true"] .site-header__links {
@@ -236,7 +236,7 @@ main {
     }
 
     .site-header__nav[data-menuopen="true"] {
-        padding: var(--space-800);
+        padding-inline: var(--space-1000);
     }
 
     .hero {
@@ -280,7 +280,7 @@ main {
         text-transform: capitalize;
         grid-column: 2 / 3;
         grid-row: 1 / -1;
-        justify-self: flex-end;
+        /* justify-self: flex-end; */
     }
 
     .site-header__nav[data-menuopen="true"] .site-header__links {
