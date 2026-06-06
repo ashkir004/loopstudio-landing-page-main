@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,41 +11,112 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <div class="site-container">
+  <header class="site-header">
+    <nav class="site-header__nav site-header__nav--shown" data-menuopen="false">
+      <div class="site-header__logo">
+        <img src="./images/logo.svg" alt="Loopstudios logo">
+      </div>
+      <ul class="site-header__links site-header__links--shown text-5 text-6-lg">
+        <li class="site-header__item"><a class="site-header__link" href="#">About</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#">Careers</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#">Events</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#">Products</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#">Support</a></li>
+      </ul>
+      <div class="site-header__menu-buttons">
 
-  Immersive experiences that deliver
+        <button
+          class="site-header__menu-button site-header__menu-button--hidden site-header__menu-button--open" aria-label="Open menu">
+          <img src="./images/icon-hamburger.svg" alt="Open menu icon">
+        </button>
+        <button class="site-header__menu-button site-header__menu-button--hidden site-header__menu-button--close" aria-label="Close menu">
+          <img src="./images/icon-close.svg" alt="Close menu icon">
+        </button>
+      </div>
+    </nav>
+  </header>
 
-  The leader in interactive VR
+  <main>
+    <section class="hero">
+      <div class="hero__title-container">
+        <h1 class="hero__title text-3 text-1-md">Immersive experiences that deliver</h1>
+      </div>
+    </section>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+    <section class="about">
+      <h2 class="about__title">The leader in interactive VR</h2>
+      <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. 
+        Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+    </section>
+<!-- 
+    <section class="creations">
+      <h2 class="creations__title">Our creations</h2>
+      <button class="creations__button">See all</button>
+      <div class="creations__container">
+        <ul class="creations__list">
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-deep-earth.jpg" alt="Deep earth">
+            <h3 class="creations__name">Deep earth</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-night-arcade.jpg" alt="Night arcade">
+            <h3 class="creations__name">Night arcade</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-soccer-team.jpg" alt="Soccer team VR">
+            <h3 class="creations__name">Soccer team VR</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-grid.jpg" alt="The grid">
+            <h3 class="creations__name">The grid</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-from-above.jpg" alt="From up above VR">
+            <h3 class="creations__name">From up above VR</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis">
+            <h3 class="creations__name">Pocket borealis</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-curiosity.jpg" alt="The curiosity">
+            <h3 class="creations__name">The curiosity</h3>
+          </li>
+          <li class="creations__item">
+            <img class="creations__image" src="./images/mobile/image-fisheye.jpg" alt="Make it fisheye">
+            <h3 class="creations__name">Make it fisheye</h3>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  </main>
 
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
+  <footer class="site-footer">
+      <div class="site-footer__logo">
+          <img src="./images/logo.svg" alt="Loopstudios logo">
+      </div>
+      <nav class="site-footer__nav">
+          <ul class="site-footer__links">
+              <li class="site-footer__item"><a class="site-footer__link" href="#">About</a></li>
+              <li class="site-footer__item"><a class="site-footer__link" href="#">Careers</a></li>
+              <li class="site-footer__item"><a class="site-footer__link" href="#">Events</a></li>
+              <li class="site-footer__item"><a class="site-footer__link" href="#">Products</a></li>
+              <li class="site-footer__item"><a class="site-footer__link" href="#">Support</a></li>
+          </ul>
+      </nav>
+      <ul class="site-footer__social-links">
+          <li class="site-footer__social-item"><a class="site-footer__social-link" href="#"><img class="site-footer__social-icon" src="./images/icon-facebook.svg" alt="Facebook"></a></li>
+          <li class="site-footer__social-item"><a class="site-footer__social-link" href="#"><img class="site-footer__social-icon" src="./images/icon-twitter.svg" alt="Twitter"></a></li>
+          <li class="site-footer__social-item"><a class="site-footer__social-link" href="#"><img class="site-footer__social-icon" src="./images/icon-pinterest.svg" alt="Pinterest"></a></li>
+          <li class="site-footer__social-item"><a class="site-footer__social-link" href="#"><img class="site-footer__social-icon" src="./images/icon-instagram.svg" alt="Instagram"></a></li>
+      </ul>
+      <div class="site-footer__copyright">
+          <p class="site-footer__copyright-text">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+  </footer>
+  </div>
 </body>
 </html>
