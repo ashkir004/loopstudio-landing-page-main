@@ -86,7 +86,7 @@ body {
 
 .text-6 {
     font-family: var(--font);
-    font-size: var(--font-xs);
+    font-size: var(--font-sm);
     font-weight: var(--font-regular);
     line-height: var(--line-height-tall);
 }
@@ -339,6 +339,51 @@ main {
     width: max-content;
 }
 
+.site-footer {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--space-500);
+    justify-items: center;
+    padding: var(--space-800) var(--space-200);
+}
+
+.site-footer__nav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.site-footer__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+
+.site-footer__link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.site-footer__social-links {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-300);
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.site-footer__copyright {
+    color: var(--white);
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+.site-footer__copyright-text {
+    color: var(--white);
+}
+
 @media (min-width: 48rem) {
 
     .text-1-md {
@@ -402,6 +447,43 @@ main {
 
     .creations__name {
         margin-inline-start: var(--space-300);
+    }
+
+    .site-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: flex-start;
+        gap: var(--space-300);
+        padding: var(--space-800) var(--space-600);
+    }
+
+    .site-footer__logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .site-footer__nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .site-footer__links {
+        flex-direction: row;
+        gap: var(--space-200);
+    }
+
+    .site-footer__social-links {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    .site-footer__copyright {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        justify-self: flex-end;
     }
 }
 
