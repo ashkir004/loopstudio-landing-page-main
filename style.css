@@ -24,6 +24,8 @@
     --space-800: calc(64 / 16 * 1rem);
     --space-900: calc(72 / 16 * 1rem);
     --space-1000: calc(80 / 16 * 1rem);
+    --space-1100: calc(88 / 16 * 1rem);
+    --space-1200: calc(96 / 16 * 1rem);
 
     --font: 'Josefin Sans', sans-serif;
 
@@ -86,7 +88,7 @@ body {
 
 .text-6 {
     font-family: var(--font);
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
     font-weight: var(--font-regular);
     line-height: var(--line-height-tall);
 }
@@ -466,7 +468,7 @@ main {
         grid-template-rows: auto;
         justify-items: flex-start;
         gap: var(--space-300);
-        padding: var(--space-800) var(--space-600);
+        padding: var(--space-800);
     }
 
     .site-footer__logo {
@@ -622,7 +624,7 @@ main {
 
     .creations__list {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 400px);
+        grid-template-rows: repeat(2, 450px);
         align-items: stretch;
         justify-items: stretch;
     }
@@ -661,6 +663,10 @@ main {
 
     .creations__item--make-it-fisheye {
         background-image: url('./images/desktop/image-fisheye.jpg');
+    }
+
+    .site-footer {
+        padding: var(--space-800) var(--space-1100);
     }
 }
 
