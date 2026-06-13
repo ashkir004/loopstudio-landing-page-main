@@ -606,6 +606,7 @@ main {
     .creations__title {
         grid-column: 1 / 3;
         justify-self: flex-start;
+        text-transform: uppercase;
     }
 
     .creations__button {
