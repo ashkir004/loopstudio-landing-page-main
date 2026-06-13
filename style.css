@@ -270,6 +270,12 @@ main {
     order: 3;
 }
 
+
+.creations__button:hover {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+}
+
 .creations__container {
     justify-self: stretch;
 }
