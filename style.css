@@ -445,6 +445,11 @@ main {
 
     .creations__item {
         background-position: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: var(--space-300);
     }
 
     .creations__item--soccer-team {
@@ -619,6 +624,10 @@ main {
         grid-template-rows: repeat(2, 400px);
         align-items: stretch;
         justify-items: stretch;
+    }
+
+    .creations__item {
+        padding: var(--space-200) 0;
     }
 
     .creations__item--deep-earth {
