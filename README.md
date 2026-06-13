@@ -15,3 +15,10 @@ This repository contains a responsive landing page built to match the Loopstudio
 - HTML5
 - CSS3 (Flexbox and CSS Grid)
 - JS
+
+
+### Links
+
+- Repository: [loopstudios-landing-page-main](https://github.com/ashkir004/loopstudio-landing-page-main)
+
+- Live Site: [loopstudios-landing-page-ashkir](https://loopstudios-landing-page-ashkir.netlify.app/)
